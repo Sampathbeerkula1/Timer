@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="./basic.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">StopWatch</div>
+      <nav class="links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Timer</a></li>
+          <li><a href="#">Clock</a></li>
+          <li><a href="#">Calendar</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="moreinfo">
+      <a href="#">click here for more info</a>
+    </div>
+    <main>
+      <div class="timer">
+        <div class="show">
+          <input
+            type="text"
+            name="show-day"
+            readonly
+            class="des"
+            id="output-days"
+          />
+          <br />
+          <label for="show-day">Days</label>
+          <div class="input_field">
+            <input type="text" class="inputs" id="days" />
+          </div>
+        </div>
+        <div class="show">
+          <input
+            type="text"
+            name="show-hours"
+            readonly
+            class="des"
+            id="output-hours"
+          />
+          <br />
+          <label for="show-hours">Hours</label>
+          <div class="input_field">
+            <input type="text" class="inputs" id="hours" />
+          </div>
+        </div>
+        <div class="show">
+          <input
+            type="text"
+            name="show-minutes"
+            readonly
+            class="des"
+            id="output-minutes"
+          />
+          <br />
+          <label for="show-minutes">Minutes</label>
+          <div class="input_field">
+            <input type="text" class="inputs" id="minutes" />
+          </div>
+        </div>
+        <div class="show">
+          <input
+            type="text"
+            name="show-seconds"
+            readonly
+            class="des"
+            id="output-seconds"
+          />
+          <br />
+          <label for="show-seconds">Seconds</label>
+          <div class="input_field">
+            <input type="text" class="inputs" id="seconds" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="btns">
+      <button style="background-color: rgb(24, 44, 82)" id="btn-set">
+        Set Timer
+      </button>
+      <button style="background-color: rgb(13, 82, 84)" id="btn-start">
+        Start/Resume
+      </button>
+      <button style="background-color: rgb(255, 81, 17)" id="btn-pause">Pause</button>
+      <button style="background-color: #ff0000" id="btn-reset">Reset</button>
+    </div>
+    <footer id="footer" class="footer">
+      <ul style="list-style-type: decimal">
+        Instructions:
+        <li>Enter the values in the inputs.</li>
+        <li>Press the SetTimer button to set the timer.</li>
+        <li>Press the Start/Resume button to Start the timer.</li>
+        <li>Pause the Timer if you want to Pause.</li>
+        <li>Press the Start/Resume button to Resume the timer.</li>
+        <li>Press the Reset Button to Reset the values.</li>
+      </ul>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>
